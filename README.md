@@ -6,7 +6,7 @@ A full‑stack **Flight Booking Web Application** built with **React (Vite)** on
 
 ##  Live Demo
 
-* **Frontend (Vercel):** [https://flight-booking-frontend-jet.vercel.app/bookings](https://flight-booking-frontend-jet.vercel.app/bookings)
+* **Frontend (Vercel):** [https://flight-booking-frontend-jet.vercel.app/](https://flight-booking-frontend-jet.vercel.app/)
 
 
 ---
