@@ -1,18 +1,142 @@
-# React + Vite
+#  Flight Booking System (Full‑Stack)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full‑stack **Flight Booking Web Application** built with **React (Vite)** on the frontend and **Node.js + Express + MongoDB** on the backend. The project supports flight search, dynamic surge pricing, wallet deduction, authenticated bookings, PDF ticket generation, and deployment on modern cloud platforms.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Live Demo
 
-## React Compiler
+* **Frontend (Vercel):** [https://flight-booking-frontend-jet.vercel.app/bookings](https://flight-booking-frontend-jet.vercel.app/bookings)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+##  Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Authentication
+
+* JWT‑based authentication
+* Protected routes (booking history, booking actions)
+* Token stored securely in browser storage
+
+### Flight Search
+
+* Search flights by **From, To, Date**
+* Real‑time flight availability
+
+### Dynamic Surge Pricing
+
+* Tracks booking attempts per flight
+* Applies surge pricing after multiple attempts
+* **Automatically resets price after 10 minutes**
+
+### Wallet System
+
+* Global wallet balance
+* Automatic deduction on booking
+* Insufficient balance protection
+
+### Booking & Tickets
+
+* Passenger name & age captured during booking
+* Unique PNR generation
+* **PDF Ticket generation (PDFKit)**
+* Downloadable ticket per booking
+
+### Booking History
+
+* View all bookings (latest first)
+* Download tickets anytime using PNR
+
+---
+
+##  Tech Stack
+
+### Frontend
+
+* React (Vite)
+* Tailwind CSS
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB (Atlas)
+* Mongoose
+* JWT Authentication
+* PDFKit
+
+### Deployment
+
+* Frontend → **Vercel**
+* Backend → **Render**
+* Database → **MongoDB Atlas (Free Tier)**
+
+---
+
+## 📁 Project Structure
+
+```
+frontend/
+ ├─ src/
+ │  ├─ api/
+ │  ├─ pages/
+ │  ├─ components/
+ │  └─ App.jsx
+ └─ vite.config.js
+
+
+---
+
+
+## ⚙️ Installation & Local Setup
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone 
+```
+
+### 2️⃣ Backend Setup
+
+```bash
+cd backend
+npm install
+node server.js
+```
+
+### 3️⃣ Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## 🧠 Key Learnings
+
+* Full authentication flow with JWT
+* Handling protected routes in React
+* Managing real‑world business logic (surge pricing)
+* PDF generation on server
+* Cloud deployment (Render + Vercel)
+* MongoDB Atlas setup & IP whitelisting
+
+---
+
+## 🧪 Test Credentials
+
+```
+Email: rishi@gmail.com
+Password: rishi123
+```
+
+---
+
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub — it motivates me a lot!
