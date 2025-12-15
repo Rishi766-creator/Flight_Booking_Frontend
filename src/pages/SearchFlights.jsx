@@ -124,9 +124,9 @@ const SearchFlights = () => {
                 <p className="text-xl font-bold text-teal-700">
                   ₹{flight.current_price}
                 </p>
-                {flight.current_price > flight.base_price && (
-                  <p className="text-sm text-red-500">Surge Applied</p>
-                )}
+                 {flight.lastSurgeAt && new Date() - new Date(flight.lastSurgeAt) < 5 * 60 * 1000 && 
+                            (<p className="text-sm text-red-500">Surge Applied</p>)}
+
               </div>
 
               <button
