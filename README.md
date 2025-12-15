@@ -95,7 +95,7 @@ frontend/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone 
+git clone https://github.com/Rishi766-creator/Flight_Booking_Frontend 
 ```
 
 ### 2️⃣ Backend Setup
